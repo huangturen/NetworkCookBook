@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B087D43528BE693D00473B3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D43428BE693D00473B3B /* AppDelegate.m */; };
+		B087D43828BE693D00473B3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D43728BE693D00473B3B /* SceneDelegate.m */; };
+		B087D43B28BE693D00473B3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D43A28BE693D00473B3B /* ViewController.m */; };
+		B087D43E28BE693E00473B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B087D43C28BE693E00473B3B /* Main.storyboard */; };
+		B087D44028BE694000473B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B087D43F28BE694000473B3B /* Assets.xcassets */; };
+		B087D44328BE694000473B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B087D44128BE694000473B3B /* LaunchScreen.storyboard */; };
+		B087D44628BE694000473B3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D44528BE694000473B3B /* main.m */; };
+		B087D45028BE694000473B3B /* NetworkCookBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D44F28BE694000473B3B /* NetworkCookBookTests.m */; };
+		B087D45B28BE694100473B3B /* NetworkCookBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D45A28BE694100473B3B /* NetworkCookBookUITests.m */; };
+		B087D46B28BE698E00473B3B /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D46A28BE698E00473B3B /* ByteOrder.m */; };
+		B087D46F28BE6F2A00473B3B /* NetworkAddressStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D46E28BE6F2A00473B3B /* NetworkAddressStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B087D44C28BE694000473B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B087D42828BE693D00473B3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B087D42F28BE693D00473B3B;
+			remoteInfo = NetworkCookBook;
+		};
+		B087D45728BE694100473B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B087D42828BE693D00473B3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B087D42F28BE693D00473B3B;
+			remoteInfo = NetworkCookBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B087D43028BE693D00473B3B /* NetworkCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B087D43328BE693D00473B3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B087D43428BE693D00473B3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B087D43628BE693D00473B3B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B087D43728BE693D00473B3B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B087D43928BE693D00473B3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B087D43A28BE693D00473B3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B087D43D28BE693E00473B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B087D43F28BE694000473B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B087D44228BE694000473B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B087D44428BE694000473B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B087D44528BE694000473B3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B087D44B28BE694000473B3B /* NetworkCookBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkCookBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B087D44F28BE694000473B3B /* NetworkCookBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkCookBookTests.m; sourceTree = "<group>"; };
+		B087D45128BE694000473B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B087D45628BE694100473B3B /* NetworkCookBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkCookBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B087D45A28BE694100473B3B /* NetworkCookBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkCookBookUITests.m; sourceTree = "<group>"; };
+		B087D45C28BE694100473B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B087D46928BE698E00473B3B /* ByteOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ByteOrder.h; sourceTree = "<group>"; };
+		B087D46A28BE698E00473B3B /* ByteOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ByteOrder.m; sourceTree = "<group>"; };
+		B087D46D28BE6F2A00473B3B /* NetworkAddressStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkAddressStore.h; sourceTree = "<group>"; };
+		B087D46E28BE6F2A00473B3B /* NetworkAddressStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkAddressStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B087D42D28BE693D00473B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B087D44828BE694000473B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B087D45328BE694100473B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B087D42728BE693D00473B3B = {
+			isa = PBXGroup;
+			children = (
+				B087D43228BE693D00473B3B /* NetworkCookBook */,
+				B087D44E28BE694000473B3B /* NetworkCookBookTests */,
+				B087D45928BE694100473B3B /* NetworkCookBookUITests */,
+				B087D43128BE693D00473B3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B087D43128BE693D00473B3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B087D43028BE693D00473B3B /* NetworkCookBook.app */,
+				B087D44B28BE694000473B3B /* NetworkCookBookTests.xctest */,
+				B087D45628BE694100473B3B /* NetworkCookBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B087D43228BE693D00473B3B /* NetworkCookBook */ = {
+			isa = PBXGroup;
+			children = (
+				B087D46828BE694B00473B3B /* chapter1 */,
+				B087D43328BE693D00473B3B /* AppDelegate.h */,
+				B087D43428BE693D00473B3B /* AppDelegate.m */,
+				B087D43628BE693D00473B3B /* SceneDelegate.h */,
+				B087D43728BE693D00473B3B /* SceneDelegate.m */,
+				B087D43928BE693D00473B3B /* ViewController.h */,
+				B087D43A28BE693D00473B3B /* ViewController.m */,
+				B087D43C28BE693E00473B3B /* Main.storyboard */,
+				B087D43F28BE694000473B3B /* Assets.xcassets */,
+				B087D44128BE694000473B3B /* LaunchScreen.storyboard */,
+				B087D44428BE694000473B3B /* Info.plist */,
+				B087D44528BE694000473B3B /* main.m */,
+			);
+			path = NetworkCookBook;
+			sourceTree = "<group>";
+		};
+		B087D44E28BE694000473B3B /* NetworkCookBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				B087D44F28BE694000473B3B /* NetworkCookBookTests.m */,
+				B087D45128BE694000473B3B /* Info.plist */,
+			);
+			path = NetworkCookBookTests;
+			sourceTree = "<group>";
+		};
+		B087D45928BE694100473B3B /* NetworkCookBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B087D45A28BE694100473B3B /* NetworkCookBookUITests.m */,
+				B087D45C28BE694100473B3B /* Info.plist */,
+			);
+			path = NetworkCookBookUITests;
+			sourceTree = "<group>";
+		};
+		B087D46828BE694B00473B3B /* chapter1 */ = {
+			isa = PBXGroup;
+			children = (
+				B087D46928BE698E00473B3B /* ByteOrder.h */,
+				B087D46A28BE698E00473B3B /* ByteOrder.m */,
+				B087D46D28BE6F2A00473B3B /* NetworkAddressStore.h */,
+				B087D46E28BE6F2A00473B3B /* NetworkAddressStore.m */,
+			);
+			path = chapter1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B087D42F28BE693D00473B3B /* NetworkCookBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B087D45F28BE694100473B3B /* Build configuration list for PBXNativeTarget "NetworkCookBook" */;
+			buildPhases = (
+				B087D42C28BE693D00473B3B /* Sources */,
+				B087D42D28BE693D00473B3B /* Frameworks */,
+				B087D42E28BE693D00473B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkCookBook;
+			productName = NetworkCookBook;
+			productReference = B087D43028BE693D00473B3B /* NetworkCookBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B087D44A28BE694000473B3B /* NetworkCookBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B087D46228BE694100473B3B /* Build configuration list for PBXNativeTarget "NetworkCookBookTests" */;
+			buildPhases = (
+				B087D44728BE694000473B3B /* Sources */,
+				B087D44828BE694000473B3B /* Frameworks */,
+				B087D44928BE694000473B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B087D44D28BE694000473B3B /* PBXTargetDependency */,
+			);
+			name = NetworkCookBookTests;
+			productName = NetworkCookBookTests;
+			productReference = B087D44B28BE694000473B3B /* NetworkCookBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B087D45528BE694100473B3B /* NetworkCookBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B087D46528BE694100473B3B /* Build configuration list for PBXNativeTarget "NetworkCookBookUITests" */;
+			buildPhases = (
+				B087D45228BE694100473B3B /* Sources */,
+				B087D45328BE694100473B3B /* Frameworks */,
+				B087D45428BE694100473B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B087D45828BE694100473B3B /* PBXTargetDependency */,
+			);
+			name = NetworkCookBookUITests;
+			productName = NetworkCookBookUITests;
+			productReference = B087D45628BE694100473B3B /* NetworkCookBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B087D42828BE693D00473B3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B087D42F28BE693D00473B3B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B087D44A28BE694000473B3B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B087D42F28BE693D00473B3B;
+					};
+					B087D45528BE694100473B3B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B087D42F28BE693D00473B3B;
+					};
+				};
+			};
+			buildConfigurationList = B087D42B28BE693D00473B3B /* Build configuration list for PBXProject "NetworkCookBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B087D42728BE693D00473B3B;
+			productRefGroup = B087D43128BE693D00473B3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B087D42F28BE693D00473B3B /* NetworkCookBook */,
+				B087D44A28BE694000473B3B /* NetworkCookBookTests */,
+				B087D45528BE694100473B3B /* NetworkCookBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B087D42E28BE693D00473B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B087D44328BE694000473B3B /* LaunchScreen.storyboard in Resources */,
+				B087D44028BE694000473B3B /* Assets.xcassets in Resources */,
+				B087D43E28BE693E00473B3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B087D44928BE694000473B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B087D45428BE694100473B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B087D42C28BE693D00473B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B087D43B28BE693D00473B3B /* ViewController.m in Sources */,
+				B087D46F28BE6F2A00473B3B /* NetworkAddressStore.m in Sources */,
+				B087D46B28BE698E00473B3B /* ByteOrder.m in Sources */,
+				B087D43528BE693D00473B3B /* AppDelegate.m in Sources */,
+				B087D44628BE694000473B3B /* main.m in Sources */,
+				B087D43828BE693D00473B3B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B087D44728BE694000473B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B087D45028BE694000473B3B /* NetworkCookBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B087D45228BE694100473B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B087D45B28BE694100473B3B /* NetworkCookBookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B087D44D28BE694000473B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B087D42F28BE693D00473B3B /* NetworkCookBook */;
+			targetProxy = B087D44C28BE694000473B3B /* PBXContainerItemProxy */;
+		};
+		B087D45828BE694100473B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B087D42F28BE693D00473B3B /* NetworkCookBook */;
+			targetProxy = B087D45728BE694100473B3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B087D43C28BE693E00473B3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B087D43D28BE693E00473B3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B087D44128BE694000473B3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B087D44228BE694000473B3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B087D45D28BE694100473B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B087D45E28BE694100473B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B087D46028BE694100473B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9FN43EDKK;
+				INFOPLIST_FILE = NetworkCookBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mby.learning.NetworkCookBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B087D46128BE694100473B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9FN43EDKK;
+				INFOPLIST_FILE = NetworkCookBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mby.learning.NetworkCookBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B087D46328BE694100473B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9FN43EDKK;
+				INFOPLIST_FILE = NetworkCookBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mby.learning.NetworkCookBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkCookBook.app/NetworkCookBook";
+			};
+			name = Debug;
+		};
+		B087D46428BE694100473B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9FN43EDKK;
+				INFOPLIST_FILE = NetworkCookBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mby.learning.NetworkCookBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkCookBook.app/NetworkCookBook";
+			};
+			name = Release;
+		};
+		B087D46628BE694100473B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9FN43EDKK;
+				INFOPLIST_FILE = NetworkCookBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mby.learning.NetworkCookBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetworkCookBook;
+			};
+			name = Debug;
+		};
+		B087D46728BE694100473B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9FN43EDKK;
+				INFOPLIST_FILE = NetworkCookBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mby.learning.NetworkCookBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetworkCookBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B087D42B28BE693D00473B3B /* Build configuration list for PBXProject "NetworkCookBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B087D45D28BE694100473B3B /* Debug */,
+				B087D45E28BE694100473B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B087D45F28BE694100473B3B /* Build configuration list for PBXNativeTarget "NetworkCookBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B087D46028BE694100473B3B /* Debug */,
+				B087D46128BE694100473B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B087D46228BE694100473B3B /* Build configuration list for PBXNativeTarget "NetworkCookBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B087D46328BE694100473B3B /* Debug */,
+				B087D46428BE694100473B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B087D46528BE694100473B3B /* Build configuration list for PBXNativeTarget "NetworkCookBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B087D46628BE694100473B3B /* Debug */,
+				B087D46728BE694100473B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B087D42828BE693D00473B3B /* Project object */;
+}
