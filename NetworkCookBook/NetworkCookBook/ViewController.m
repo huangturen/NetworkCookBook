@@ -22,7 +22,7 @@
 //    NSLog(@"%@",@(type));
     
     NetworkAddressStore *networkAddressStore = [NetworkAddressStore new];
-    [networkAddressStore networkInfos];
+    NSLog(@"%@",[networkAddressStore networkInfos]);
 }
 
 

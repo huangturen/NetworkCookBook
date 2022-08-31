@@ -7,15 +7,36 @@
 
 #import "NetworkAddressStore.h"
 #import <ifaddrs.h>
-#import <sys/socket.h>
 #import <arpa/inet.h>
 
 #define INET6_ADDRSTRLEN 46
 #define INET_ADDRSTRLEN 16
 
+@implementation AddressInfo
+
++ (AddressInfo *)addressInfoWithIpVersion:(uint8_t)ipversion
+                                     name:(NSString *)name
+                                  address:(NSString *)address
+                                     mask:(NSString *)mask
+                                  gateway:(NSString *)gateway{
+    AddressInfo *info = [AddressInfo new];
+    info.ipversion = ipversion;
+    info.name = name;
+    info.address = address;
+    info.mask = mask;
+    info.gateway = gateway;
+    return info;
+}
+
+- (NSString *)description{
+    return [NSString stringWithFormat:@"ipversion:%@, name:%@, address:%@, mask:%@, gateway:%@", self.ipversion == AF_INET? @"iPv4" : self.ipversion == AF_INET6? @"iPv6" : @(self.ipversion), self.name, self.address, self.mask, self.gateway];
+}
+
+@end
+
 @implementation NetworkAddressStore
 
-- (NSMutableArray *)networkInfos{
+- (NSMutableArray<AddressInfo *> *)networkInfos{
     struct ifaddrs *interfaces = NULL;
     int success = 0;
     success = getifaddrs(&interfaces);
@@ -24,41 +45,42 @@
     }
     
     struct ifaddrs *temp_addr = interfaces;
+    NSMutableArray<AddressInfo *> *addressInfos = [NSMutableArray array];
     while (temp_addr != NULL) {
         uint8_t ipversion;
-        NSLog(@"******************************");
         if (temp_addr->ifa_addr->sa_family == AF_INET) {
-            NSLog(@"IPv4");
             ipversion = AF_INET;
         }
         else if (temp_addr->ifa_addr->sa_family == AF_INET6){
-            NSLog(@"IPv6");
             ipversion = AF_INET6;
         }
         else{
-            NSLog(@"%@",@(temp_addr->ifa_addr->sa_family));
             ipversion = temp_addr->ifa_addr->sa_family;
         }
         char naddr[INET6_ADDRSTRLEN];
         char nmask[INET6_ADDRSTRLEN];
         char ngate[INET6_ADDRSTRLEN];
 
-        NSLog(@"Name: %@", [NSString stringWithUTF8String:temp_addr->ifa_name]);
         inet_ntop(ipversion, &((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr, naddr,INET_ADDRSTRLEN);
-        NSLog(@"Address: %@", [NSString stringWithUTF8String:naddr]);
         if ((struct sockaddr_in6 *)temp_addr->ifa_netmask != NULL) {
             inet_ntop(ipversion, &((struct sockaddr_in *)temp_addr->ifa_netmask)->sin_addr, nmask, INET_ADDRSTRLEN);
-            NSLog(@"NetMask: %@", [NSString stringWithUTF8String:nmask]);
         }
         
         if ((struct sockaddr_in6 *)temp_addr->ifa_dstaddr != NULL) {
             inet_ntop(ipversion, &((struct sockaddr_in *)temp_addr->ifa_dstaddr)->sin_addr, ngate, INET_ADDRSTRLEN);
-            NSLog(@"GateWay: %@", [NSString stringWithUTF8String:ngate]);
         }
+        
+        AddressInfo *info = [AddressInfo addressInfoWithIpVersion:ipversion
+                                                             name:[NSString stringWithUTF8String:temp_addr->ifa_name]
+                                                             address:[NSString stringWithUTF8String:naddr]
+                                                             mask:[NSString stringWithUTF8String:nmask]
+                                                          gateway:[NSString stringWithUTF8String:ngate]];
+        
+        [addressInfos addObject:info];
         temp_addr = temp_addr->ifa_next;
     }
     freeifaddrs(interfaces);
-    return nil;
+    return [addressInfos copy];
     
 }
 
