@@ -16,6 +16,8 @@
 
 @interface ViewController ()
 
+@property(nonatomic)UIImageView *imageView;
+
 @end
 
 @implementation ViewController
@@ -85,17 +87,39 @@
 //        NSLog(@"%@", [NSString stringWithFormat:@"Error code %d recieved. Server was not started", bsdServ.errorCode]);
 //    }
     
-    BSDSocketClient *bsdClient = [[BSDSocketClient alloc] initWithAddress:@"127.0.0.1" andPort:2004];
+//    [self startClient];
+//    [self startServer];
+}
+
+- (void)startClient {
+    NSData *data = UIImagePNGRepresentation([UIImage imageNamed:@"image"]);
+    
+    
+    BSDSocketClient *bsdClient = [[BSDSocketClient alloc] initWithAddress:@"127.0.0.1" andPort:2006];
     if (bsdClient.errorCode == NOERROR) {
-        [bsdClient writtenToSocket:bsdClient.sockfd withChar:@"hhhhhhh"];
-        NSString *recvStr = [bsdClient recvFromSocket:bsdClient.sockfd withMaxChar:MAXLINE];
-        NSLog(@"%@", recvStr);
+        [bsdClient sendData:data toSocket:bsdClient.sockfd];
     }
     else{
         NSLog(@"%@", [NSString stringWithFormat:@"Error code %d ercived. Server was not started", bsdClient.errorCode]);
 
     }
-    
+}
+
+- (void)startServer {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newDataReceived:) name:@"postdata" object:nil];
+    BSDSocketServer *server = [[BSDSocketServer alloc] initOnPort:2006];
+    if (server.errorCode == NOERROR) {
+        [server dataServerListenWithDescriptor:server.listenfd];
+    }
+    else{
+        NSLog(@"%@", [NSString stringWithFormat:@"Error code %d ercived. Server was not started", server.errorCode]);
+    }
+}
+
+- (void)newDataReceived:(NSNotification *)notification {
+    NSData *data = notification.object;
+    self.imageView = [[UIImageView alloc]initWithImage:[UIImage imageWithData:data]];
+    [self.view addSubview:self.imageView];
 }
 
 

@@ -25,6 +25,7 @@ typedef NS_ENUM(NSUInteger, BSDClientErrorCode){
 @property(nonatomic) int errorCode, sockfd;
 - (instancetype)initWithAddress:(NSString *)addr andPort:(int)port;
 - (ssize_t)writtenToSocket:(int)sockfdNum withChar:(NSString *)vptr;
+- (ssize_t)sendData:(NSData *)data toSocket:(int)lsockfd;
 - (NSString *)recvFromSocket:(int)lsockfd withMaxChar:(int)max;
 
 @end

@@ -58,6 +58,8 @@
     return n;
 }
 
+
+
 - (NSString *)recvFromSocket:(int)lsockfd withMaxChar:(int)max{
     char recvline[max];
     ssize_t n;
@@ -68,6 +70,21 @@
     else{
         self.errorCode = ClientREADERROR;
         return @"Server Terminated Prematurely";
+    }
+}
+
+
+- (ssize_t)sendData:(NSData *)data toSocket:(int)lsockfd{
+    NSLog(@"Sending");
+    ssize_t n;
+    const UInt8 *buf = (const UInt8 *)[data bytes];
+    if ((n = send(lsockfd, buf, [data length], 0)) <= 0) {
+        self.errorCode = ClientWRITEERROR;
+        return -1;
+    }
+    else{
+        self.errorCode = ClientNOERROR;
+        return n;
     }
 }
 
