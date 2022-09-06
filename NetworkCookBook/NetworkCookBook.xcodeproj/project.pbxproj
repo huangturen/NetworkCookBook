@@ -21,6 +21,7 @@
 		B087D47228BF9FFB00473B3B /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D47128BF9FFB00473B3B /* AddrInfo.m */; };
 		B087D47628C0F2A900473B3B /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D47528C0F2A900473B3B /* BSDSocketServer.m */; };
 		B087D47928C1083600473B3B /* BSDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D47828C1083600473B3B /* BSDSocketClient.m */; };
+		B087D47D28C64BFF00473B3B /* CFNetworkUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B087D47C28C64BFF00473B3B /* CFNetworkUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		B087D47528C0F2A900473B3B /* BSDSocketServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSDSocketServer.m; sourceTree = "<group>"; };
 		B087D47728C1083600473B3B /* BSDSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDSocketClient.h; sourceTree = "<group>"; };
 		B087D47828C1083600473B3B /* BSDSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDSocketClient.m; sourceTree = "<group>"; };
+		B087D47B28C64BFF00473B3B /* CFNetworkUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFNetworkUtilities.h; sourceTree = "<group>"; };
+		B087D47C28C64BFF00473B3B /* CFNetworkUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNetworkUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		B087D43228BE693D00473B3B /* NetworkCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				B087D47A28C64BE200473B3B /* chapter2 */,
 				B087D46828BE694B00473B3B /* chapter1 */,
 				B087D43328BE693D00473B3B /* AppDelegate.h */,
 				B087D43428BE693D00473B3B /* AppDelegate.m */,
@@ -168,6 +172,15 @@
 				B087D47528C0F2A900473B3B /* BSDSocketServer.m */,
 			);
 			path = chapter1;
+			sourceTree = "<group>";
+		};
+		B087D47A28C64BE200473B3B /* chapter2 */ = {
+			isa = PBXGroup;
+			children = (
+				B087D47B28C64BFF00473B3B /* CFNetworkUtilities.h */,
+				B087D47C28C64BFF00473B3B /* CFNetworkUtilities.m */,
+			);
+			path = chapter2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +316,7 @@
 				B087D46F28BE6F2A00473B3B /* NetworkAddressStore.m in Sources */,
 				B087D46B28BE698E00473B3B /* ByteOrder.m in Sources */,
 				B087D47228BF9FFB00473B3B /* AddrInfo.m in Sources */,
+				B087D47D28C64BFF00473B3B /* CFNetworkUtilities.m in Sources */,
 				B087D43528BE693D00473B3B /* AppDelegate.m in Sources */,
 				B087D47628C0F2A900473B3B /* BSDSocketServer.m in Sources */,
 				B087D47928C1083600473B3B /* BSDSocketClient.m in Sources */,

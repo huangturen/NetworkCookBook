@@ -9,9 +9,6 @@
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 
-#define INET6_ADDRSTRLEN 46
-#define INET_ADDRSTRLEN 16
-
 @implementation AddressInfo
 
 + (AddressInfo *)addressInfoWithIpVersion:(uint8_t)ipversion

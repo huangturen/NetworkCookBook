@@ -13,6 +13,7 @@
 #import <objc/message.h>
 #import "BSDSocketServer.h"
 #import "BSDSocketClient.h"
+#import "CFNetworkUtilities.h"
 
 @interface ViewController ()
 
@@ -89,6 +90,12 @@
     
 //    [self startClient];
 //    [self startServer];
+    
+    CFNetworkUtilities *utils = [CFNetworkUtilities new];
+    NSArray *addArray = [utils addressesForHostname:@"www.baidu.com"];
+    NSLog(@"%@",addArray);
+    NSArray *hostArray = [utils hostnamesForAddress:@"36.152.44.96"];
+    NSLog(@"%@",hostArray);
 }
 
 - (void)startClient {
